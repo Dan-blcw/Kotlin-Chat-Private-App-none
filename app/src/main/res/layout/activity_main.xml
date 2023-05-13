@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="412dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_menu" />
+
+        <TextView
+            android:id="@+id/txtNothing04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_marginLeft="-192dp"
+            android:text="Messages"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/btn_pen"
+            android:layout_marginLeft="-41dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icon_camera" />
+
+        <ImageButton
+            android:id="@+id/btn_pen"
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/card"
+            android:layout_marginStart="-39dp"
+            android:layout_marginEnd="45dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/edit1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:foregroundGravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="25dp">
+
+            <ImageView
+                android:id="@+id/imgProfileMain"
+                android:layout_width="36dp"
+                android:layout_marginTop="7dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/img" />
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMain"
+        android:layout_width="413dp"
+        android:layout_height="579dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:listitem="@layout/lo_messages_adapter" />
+</androidx.constraintlayout.widget.ConstraintLayout>

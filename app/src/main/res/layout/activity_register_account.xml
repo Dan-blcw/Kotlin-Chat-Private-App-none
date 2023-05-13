@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAccount">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Create new account"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNothing00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity=""
+        android:text="Your email address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtNothing02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a password"
+        app:layout_constraintEnd_toEndOf="@+id/edtUserPhone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtUserPhone"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserPhone" />
+
+    <TextView
+        android:id="@+id/txtNothing01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Username"
+        app:layout_constraintEnd_toEndOf="@+id/edtGmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtGmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtGmail" />
+
+    <EditText
+        android:id="@+id/edtUserPhone"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:background="@drawable/lo_register"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNothing01"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNothing01"
+        app:layout_constraintTop_toBottomOf="@+id/txtNothing01" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lo_register"
+        android:ems="10"
+        android:hint="min 8 characters"
+        android:paddingLeft="8dp"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="@+id/txtNothing02"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNothing02"
+        app:layout_constraintTop_toBottomOf="@+id/txtNothing02" />
+
+    <EditText
+        android:id="@+id/edtGmail"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lo_register"
+        android:ems="10"
+        android:hint="yourtil@gmail.com"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtNothing00"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtNothing00"
+        app:layout_constraintTop_toBottomOf="@+id/txtNothing00" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lo_btn"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/edtRepassword"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="@+id/edtRepassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtRepassword" />
+
+    <TextView
+        android:id="@+id/txtnothing03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repassword"
+        app:layout_constraintStart_toStartOf="@+id/edtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <EditText
+        android:id="@+id/edtRepassword"
+        android:layout_width="354dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/lo_register"
+        android:ems="10"
+        android:hint="repassword"
+        android:paddingLeft="8dp"
+        app:layout_constraintStart_toStartOf="@+id/txtnothing03"
+        app:layout_constraintTop_toBottomOf="@+id/txtnothing03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
